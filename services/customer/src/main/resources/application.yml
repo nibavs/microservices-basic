@@ -5,6 +5,7 @@ spring:
     url: ${DB_URL}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+
   jpa:
     properties:
       hibernate:
@@ -13,6 +14,13 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 server:
   port: ${SERVER_PORT}
