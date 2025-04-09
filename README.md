@@ -3,6 +3,8 @@
 ## Description
 This project is a simple microservices-usage realization...
 
+![Structure](./Structure.png)
+
 ## Technologies Used
 
 - Eureka server
