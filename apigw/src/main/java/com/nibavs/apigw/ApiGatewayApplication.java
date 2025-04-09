@@ -21,7 +21,7 @@ public class ApiGatewayApplication {
                 .route(r -> r
                         .path("/api/v1/customers/**")
                         .filters(f -> f.circuitBreaker(config -> config
-                                .setName("mycmd1")
+                                .setName("customerCircuitBreaker")
                                 .setFallbackUri("forward:/fallback")))
                         .uri(customerUri))
                 .build();

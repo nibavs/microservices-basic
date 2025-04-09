@@ -1,5 +1,7 @@
 package com.nibavs.customer;
 
+import com.nibavs.customer.fraud.FraudCheckResponse;
+import com.nibavs.customer.fraud.FraudClient;
 import org.springframework.stereotype.Service;
 
 @Service
