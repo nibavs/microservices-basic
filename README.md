@@ -11,8 +11,12 @@ This project is a simple microservices-usage realization...
 - Feign Client
 - Spring Cloud Gateway
 - Docker
+- RabbitMq
 
-[//]: # (RabbitMq)
+## Microservices
+- Customer 
+- Fraud
+- Notification
 
 ## Features
 
