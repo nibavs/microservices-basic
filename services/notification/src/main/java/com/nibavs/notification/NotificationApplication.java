@@ -1,4 +1,4 @@
-package com.nibavs.customer;
+package com.nibavs.notification;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,13 +6,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication(
         scanBasePackages = {
-                "com.nibavs.customer",
-                "com.nibavs.ampq"
-        }
+                "com.nibavs.notification",
+                "com.nibavs.ampq"}
 )
 @EnableFeignClients
-public class CustomerApplication {
+public class NotificationApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CustomerApplication.class, args);
+        SpringApplication.run(NotificationApplication.class, args);
     }
 }
