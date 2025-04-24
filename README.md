@@ -1,7 +1,7 @@
 # Microservices-basic 🗿
 
 ## Description
-This project is a simple microservices-usage realization...
+This project is a simple microservices-usage realization. There are three microservices: customer, fraud, notification. When customer has registered, Feign client sends HTTP request to the fraud service, this service is checking whether customer fraudster or not and sends back appropriate response. After this message about customer registration goes to the notification service via RabbitMQ message broker. Message is saved in PostgreSQL database. All of this connected with eureka server and API Gateway. Docker containers are used as well.
 
 ![Structure](./Structure.png)
 
@@ -18,13 +18,6 @@ This project is a simple microservices-usage realization...
 - Fraud
 - Notification
 
-## Features
 
-## Installation and Running
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/nibavs/microservices-basic.git
-2. Make sure you have Java 17+ and Maven installed.
-3. 
 
 
